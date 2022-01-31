@@ -1,8 +1,8 @@
 <script>
-  import Table from "./components/Table.svelte";
-  import data from "./data/data.json";
+  import Table from './components/Table.svelte';
+  import data from './data/data.json';
 
-  import pym from "pym.js";
+  import pym from 'pym.js';
 
   // Important iframe handling
   new pym.Child({
@@ -11,38 +11,38 @@
 
   const cols = [
     {
-      label: "Rank",
+      label: 'Rank',
       visible: false,
     },
     {
-      label: "Logo",
+      label: 'Logo',
       visible: false,
       ariaHidden: true,
     },
     {
-      label: "Team",
+      label: 'Team',
       visible: false,
-      class: "team",
+      class: 'team',
     },
     {
-      label: "W-L",
+      label: 'W-L',
       visible: true,
-      ariaLabel: "Win-Loss Record",
+      ariaLabel: 'Win-Loss Record',
     },
     {
-      label: "Points",
+      label: 'Points',
       visible: true,
     },
     {
-      label: "Chg.",
+      label: 'Chg.',
       visible: true,
-      ariaLabel: "Change in rank since last week",
+      ariaLabel: 'Change in rank since last week',
     },
   ];
 </script>
 
 <div class="chart-container">
-  <h1 class="headline">AP Men's Basketball Poll, Week _</h1>
+  <h1 class="headline">AP Men's Basketball Poll, Week 13</h1>
   <!-- <p class="headline-units">
     <span class="swatch" />Currently in playoffs, as of August 10, 2021
   </p> -->
